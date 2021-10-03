@@ -74,7 +74,19 @@ function initialize() {
 		{ name: 'Description', detail: '' },
 		{ name: 'Author', detail: '' },
 		{ name: 'Duration', detail: '' },
-		{ name: 'Tools used', detail: '' }
+		{ name: 'Tools used', detail: '' },
+		{ name: 'Endpoint', detail: '' }
+	];
+
+	downloadTemplate = [
+	 	{ name: 'Name', detail: '' },
+		{ name: 'Description', detail: '' },
+		{ name: 'Author', detail: '' },
+		{ name: 'Duration', detail: '' },
+		{ name: 'Tools used', detail: '' },
+		{ name: 'period', detail: '' },
+		{ name: 'start', detail: '' },
+		{ name: 'endpoint', detail: '' }
 	];
 
 	arrowDetailTemplate = [
@@ -633,6 +645,20 @@ function newTemplate() {
 	return newInstance;
 }
 
+function newEntityProperties(typeObject){
+
+	var newInstance=null;
+
+	if (typeObject == "Download Data"){
+		newInstance = JSON.parse(JSON.stringify(downloadTemplate));
+	} else {
+		newInstance = JSON.parse(JSON.stringify(detailTemplate));
+	}
+
+	return newInstance;
+
+}
+
 function newArrowTemplate() {
 	var newInstance = JSON.parse(JSON.stringify(arrowDetailTemplate));
 	return newInstance;
@@ -694,18 +720,20 @@ function drop(e) {
 	var activeWorkflowElement = JSON.parse(localStorage.getItem("activeWorkflowElement")); //The current set of workflow diagrams that is being used ex: "common tasks" and "earthcube tools"
 
 	var newElement = { "id": "d" + (new Date()).getTime(), "name": "", "imageSource": "", "startX": startX, "startY": startY, "endX": endX, "endY": endY, "toolsUsed": [] }; //create new element
-
+	console.log(newElement);
 	//finds which element the currently dragged element adds fields to the new Element
 	for (var i = 0; i < activeWorkflowElement.elements.length; i++) {
 		if (activeWorkflowElement.elements[i].imageSource == src) {
 			newElement.name = activeWorkflowElement.elements[i].elementName; //saves name
 			newElement.imageSource = src; //saves image
+			console.log(newElement);
 		}
 	}
 
 	if (index == -1) { // if not overlapping with other element
 		globalJSON.mainObjects.push(newElement); //pushed into mainobjects
-		globalJSON.details.push(newTemplate());
+		//globalJSON.details.push(newTemplate());
+		globalJSON.details.push(newEntityProperties(newElement.name));
 		globalJSON.subcomponent_details.push({ "parentId": newElement.id, "details": [] });
 
 		//draws the image to the canvas
