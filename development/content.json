@@ -2,31 +2,22 @@
 	"workflowElements": [
 
 		{
-			"name": "Common Tasks",
-			"elements": [
+			"name": "Tasks",
+			"elements": [		
 				{
-						
-					"elementName": "Query Database",
-					"imageSource": "/images/commonTasks/queryDatabase.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-						
-				{
-					"elementName": "Data Preparation",
+					"elementName": "Select Data",
 					"imageSource": "/images/commonTasks/dataPreparation.png",
 					"properties": [
 						{
 							"propertyName": "Description",
 							"propertyType": "String"
+						},
+						{
+							"propertyName": "Variables (separated by comma)",
+							"propertyType": "String"
 						}
 					]
-				},
-						
+				},		
 				{
 					"elementName": "Download Data",
 					"imageSource": "/images/commonTasks/downloadData.png",
@@ -48,18 +39,6 @@
 						}
 					]
 				},
-				
-				{
-					"elementName" : "Run Code",
-					"imageSource": "/images/commonTasks/runCode.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				
 				{
 					"elementName" : "Data",
 					"imageSource": "/images/commonTasks/data.png",
@@ -69,120 +48,16 @@
 							"propertyType": "String"
 						}
 					]
-				},
-                
-                {
-					"elementName" : "Collection",
-					"imageSource": "/images/commonTasks/collection.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				
-				{
-					"elementName" : "Visualize",
-					"imageSource": "/images/commonTasks/visualize.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                {
-					"elementName" : "Calibrate Model",
-					"imageSource": "/images/commonTasks/calibrateModel.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                {
-					"elementName" : "Create Model",
-					"imageSource": "/images/commonTasks/createModel.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				{
-					"elementName" : "Evaluation",
-					"imageSource": "/images/commonTasks/eval.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                {
-					"elementName" : "Model Integration",
-					"imageSource": "/images/commonTasks/integration.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                {
-					"elementName" : "Quality Control",
-					"imageSource": "/images/commonTasks/qualityControl.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                {
-					"elementName" : "Run Model",
-					"imageSource": "/images/commonTasks/runModel.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                {
-					"elementName" : "Statistical Analysis",
-					"imageSource": "/images/commonTasks/statAnalysis.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				{
-					"elementName" : "TBD",
-					"imageSource": "/images/commonTasks/tbd.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
 				}
-                
 			]
 		},
-			
 		{
-			"name": "Data Science Tools",
+			"name": "Tools",
 			"elements": [
                 
                 {		
-					"elementName": "PYTORCH",
-					"imageSource": "/images/data_science_tools/pytorch.png",
+					"elementName": "EPICOLLECT5",
+					"imageSource": "/images/citizen_science_tools/epicollect5-logo.png",
 					"properties": [
 						{
 							"propertyName": "Description",
@@ -191,19 +66,18 @@
 					]
 				},
 				{		
-					"elementName": "TENSORFLOW",
-					"imageSource": "/images/data_science_tools/tensorflow.png",
+					"elementName": "ZOONIVERSE",
+					"imageSource": "/images/citizen_science_tools/zooniverse-logo.png",
 					"properties": [
 						{
 							"propertyName": "Description",
 							"propertyType": "String"
 						}
 					]
-				},
-					
+				},		
 				{
-					"elementName": "APACHE SPARK",
-					"imageSource": "/images/data_science_tools/spark.png",
+					"elementName": "GRAFANA",
+					"imageSource": "/images/citizen_science_tools/grafana-logo.png",
 					"properties": [
 						{
 							"propertyName": "Description",
@@ -212,224 +86,8 @@
 					]
 				},
                 {
-					"elementName": "TABLEAU",
-					"imageSource": "/images/data_science_tools/tableau.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-					
-				{
-					"elementName": "D3",
-					"imageSource": "/images/data_science_tools/d3.jpeg",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				
-                {
-					"elementName": "PYSPARK",
-					"imageSource": "/images/data_science_tools/py_spark.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				{
-					"elementName": "THEANO",
-					"imageSource": "/images/data_science_tools/theano.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName": "APACHE MXNET",
-					"imageSource": "/images/data_science_tools/mx_net.jpeg",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName": "CNTK",
-					"imageSource": "/images/data_science_tools/cntk.jpeg",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName": "KERAS",
-					"imageSource": "/images/data_science_tools/keras.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName": "CAFFE",
-					"imageSource": "/images/data_science_tools/caffe.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName": "CAFFE 2",
-					"imageSource": "/images/data_science_tools/caffe2.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				
-				{
-					"elementName" : "HADOOP",
-					"imageSource": "/images/data_science_tools/hadoop.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				
-				{
-					"elementName" : "BIG ML",
-					"imageSource": "/images/data_science_tools/big_ml.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				
-				{
-					"elementName" : "ELASTIC SEARCH",
-					"imageSource": "/images/data_science_tools/elastic_search.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-
-				{
-					"elementName" : "OPEN REFINE",
-					"imageSource": "/images/data_science_tools/openrefine.jpg",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				{
-					"elementName" : "SCIKIT LEARN",
-					"imageSource": "/images/data_science_tools/scikit_learn.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "NLTK",
-					"imageSource": "/images/data_science_tools/nltk.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                 {
-					"elementName" : "OPEN NLP",
-					"imageSource": "/images/data_science_tools/open_nlp.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "PANDAS",
-					"imageSource": "/images/data_science_tools/pandas.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "SCIPY",
-					"imageSource": "/images/data_science_tools/scipy.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "NUMPY",
-					"imageSource": "/images/data_science_tools/numpy.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				{
-					"elementName" : "MATPLOTLIB",
-					"imageSource": "/images/data_science_tools/matplotlib.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				{
-					"elementName" : "Other",
-					"imageSource": "/images/other-black.png",
+					"elementName": "ZENODO",
+					"imageSource": "/images/citizen_science_tools/zenodo_logo.jpg",
 					"properties": [
 						{
 							"propertyName": "Description",
@@ -437,124 +95,7 @@
 						}
 					]
 				}
-                
-			]
-		},
-		{
-			"name" : "Common Tools",
-			"elements": [
-            
-                {
-					"elementName" : "CSV",
-					"imageSource": "/images/commonTools/csv.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "Excel",
-					"imageSource": "/images/commonTools/excel.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "GitHub",
-					"imageSource": "/images/commonTools/github.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "Matlab",
-					"imageSource": "/images/commonTools/matlab.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-				{
-					"elementName" : "Jupyter Notebook",
-					"imageSource": "/images/commonTools/jupyter.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "R",
-					"imageSource": "/images/commonTools/r.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                 {
-					"elementName" : "Python",
-					"imageSource": "/images/commonTools/python.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "Search engine",
-					"imageSource": "/images/commonTools/search.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "Shell script",
-					"imageSource": "/images/commonTools/shell.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				},
-                
-                {
-					"elementName" : "Other",
-					"imageSource": "/images/other-black.png",
-					"properties": [
-						{
-							"propertyName": "Description",
-							"propertyType": "String"
-						}
-					]
-				}
-
 			]
 		}
-		
 	]
 }
