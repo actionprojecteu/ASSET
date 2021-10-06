@@ -94,6 +94,16 @@
 							"propertyType": "String"
 						}
 					]
+				},
+				{
+					"elementName": "InfluxDB",
+					"imageSource": "/images/citizen_science_tools/influxDB.png",
+					"properties": [
+						{
+							"propertyName": "Description",
+							"propertyType": "String"
+						}
+					]
 				}
 			]
 		}
