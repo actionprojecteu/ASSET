@@ -211,7 +211,7 @@ function loadExampleWorkflow(fileNum) {
 	resetTable();
 	switch (fileNum) {
 		case 0:
-			globalJSON = JSON.parse(algal);
+			globalJSON = JSON.parse(open_soil_atlas);
 			break;
 		case 1:
 			globalJSON = JSON.parse(lgm);
